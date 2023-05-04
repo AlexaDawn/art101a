@@ -1,6 +1,6 @@
-// index.js - purpose and description here
-// Author: Your Name
-// Date:
+// index.js - Rock, Paper Scissors
+// Author: Alexa Marquez
+// Date: April 2023
 
 // Constants
 
@@ -19,3 +19,14 @@ function main() {
 
 // let's get this party started
 main();
+
+//Print game instructions
+  //Accept user imput
+  //Validate user input
+//Choose computer move
+  //Test win conditions
+//Print result
+//Print game options [Would you like to play again? y/n]
+  //Accept user input
+  //Validate user input
+//Repeat

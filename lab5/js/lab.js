@@ -5,7 +5,7 @@
 // Variables
 make = "Suzuki";
 model = "Carry";
-color = "Sage";
+color = "Teal";
 year = 1991;
 
 // Functions
