@@ -22,3 +22,7 @@ function NameSorter() {
 
 document.writeln("Here's your alphabetized name: ", 
   NameSorter(), "</br>");
+
+  function sortStr(str) {
+    var strArray = str.split
+  }
