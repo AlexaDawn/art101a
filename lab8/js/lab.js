@@ -28,4 +28,4 @@ var result = numbers.map(function(x){
 console.log("The double of each number", result);
 
 var outputEl = document.getElementById("output"); 
-outputEl.innerHTML = mapResults; // put your results here
+outputEl.innerHTML = map.result; // put your results here
