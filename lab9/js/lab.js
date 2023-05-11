@@ -1,21 +1,39 @@
-// index.js - purpose and description here
-// Author: Your Name
-// Date:
+// index.js - Lab 9
+// Author: Alexa Marquez
+// Date: 10 May
 
 // Constants
 
 // Functions
+challengesEl = 
+document.getElementById("challenge");
+console.log("define challenge");
 
-// this is an example function and this comment tells what it doees and what parameters are passed to it.
-function myFunction(param1, param2) {
-  // some code here
-  // return results;
-}
+problemsEl = 
+document.getElementById("problems");
+console.log("define problems");
 
-function main() {
-  console.log("Main function started.");
-  // the code that makes everything happen
-}
+outputEl = 
+document.getElementById("output");
+console.log("Define outputEl");
 
-// let's get this party started
-main();
+new1El = 
+document.createElement("p");
+new1El.innerHTML = "Hey";
+console.log("Birthing new1El")
+
+var new2El = 
+document.createElement("p");
+new2El.innerHTML = "Over here";
+console.log("Birthing new2El");
+
+setTimeout(function()  {
+  outputEl.appendChild(new1El),
+  console.log("Append new1EL")
+}, 2500);
+
+setTimeout(function()  {
+  outputEl.appendChild(new2El),
+  console.log("Append new2EL")
+}, 5000);
+
