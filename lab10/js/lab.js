@@ -6,16 +6,17 @@
 
 // Functions
 
-// this is an example function and this comment tells what it doees and what parameters are passed to it.
-function myFunction(param1, param2) {
-  // some code here
-  // return results;
-}
+var button = document.createElement("button");
+button.innerHTML = "Do Something";
 
-function main() {
-  console.log("Main function started.");
-  // the code that makes everything happen
-}
+// 2. Append somewhere
+var body = document.getElementById("output");
+body.appendChild(button);
 
-// let's get this party started
-main();
+// 3. Add event handler
+button.addEventListener ("click", function() {
+  alert("did something");
+});
+
+
+
