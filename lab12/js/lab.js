@@ -1,21 +1,54 @@
 // index.js - purpose and description here
-// Author: Your Name
-// Date:
+// Author: Alexa Marquez
+// Date: 22 May 2023
 
 // Constants
 
 // Functions
 
-// this is an example function and this comment tells what it doees and what parameters are passed to it.
-function myFunction(param1, param2) {
-  // some code here
-  // return results;
+//Return Merill, Cowell, Porter, Rachel Carson, John R. Lewis, College 9, Oakes, Kresge, Stevenson, Crown
+//depending on on length mod 10
+
+function sortingHat(str) {
+  len = str.length;
+  mod = len % 10;
+  if (mod == 0) {
+    return "Merill"
+  }
+  else if (mod == 1) {
+    return "Cowell"
+  }
+  else if (mod == 2) {
+    return "Porter"
+  }
+  else if (mod == 3) {
+    return "Rachel Carson"
+  }
+  else if (mod == 4) {
+    return "John R. Lewis"
+  }
+  else if (mod == 5) {
+    return "College 9"
+  }
+  else if (mod == 6) {
+    return "Oakes"
+  }
+  else if (mod == 7) {
+    return "Kresge"
+  }
+  else if (mod == 8) {
+    return "Stevenson"
+  }
+  else if (mod == 9) {
+    return "Crown"
+  }
 }
 
-function main() {
-  console.log("Main function started.");
-  // the code that makes everything happen
+var myButton = document.getElementById("button");
+myButton.addEventListener("click", function() {
+  var name = document.getElementById("input").value;
+  var college = sortingHat(name);
+  newText = "<p>You've been selected to join " + college + "!</p>";
+  document.getElementById("output").innerHTML = newText;
 }
-
-// let's get this party started
-main();
+)
