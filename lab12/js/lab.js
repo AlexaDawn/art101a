@@ -6,6 +6,11 @@
 
 // Functions
 
+//$("#button").click(function(){
+//  var name = #("input").val();
+//  $("output").append("<p>"+ name);
+//})
+
 //Return Merill, Cowell, Porter, Rachel Carson, John R. Lewis, College 9, Oakes, Kresge, Stevenson, Crown
 //depending on on length mod 10
 

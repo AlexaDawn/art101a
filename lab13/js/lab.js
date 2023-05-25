@@ -6,16 +6,35 @@
 
 // Functions
 
-// this is an example function and this comment tells what it doees and what parameters are passed to it.
-function myFunction(param1, param2) {
-  // some code here
-  // return results;
+for (var sheep =1; sheep <=200; sheep ++) { 
+
+  console.log("Counting sheep number:", sheep);
+  if (sheep % 105 == 0)		
+    {console.log("Fizz Buzz Boom");
+    $("#output").append("<div>"+"Fizz Buzz Boom")}
+
+  else if (sheep % 15 == 0)
+    {console.log("Fizz Buzz"); 
+    $("#output").append("<div>"+"Fizz Buzz")}
+
+
+  else if (sheep % 3 == 0)
+    {console.log("Fizz");
+    $("#output").append("<div>"+"Fizz")}
+    
+  else if (sheep % 5 == 0)		
+    {console.log("Buzz");
+    $("#output").append("<div>"+"Buzz")}
+
+  else if (sheep % 7 == 0)		
+    {console.log("Boom");
+    $("#output").append("<div>"+"Boom")}
+  
+  else {console.log(sheep);
+  $("#output").append("<div>"+ sheep)}
+  
 }
 
-function main() {
-  console.log("Main function started.");
-  // the code that makes everything happen
-}
+//loop
+//if mutliple of 3
 
-// let's get this party started
-main();
