@@ -1,6 +1,6 @@
 // index.js - purpose and description here
-// Author: Your Name
-// Date:
+// Author: Alexa Marquez
+// Date: 24 May 2023
 
 // Constants
 
@@ -12,6 +12,14 @@ for (var sheep =1; sheep <=200; sheep ++) {
   if (sheep % 105 == 0)		
     {console.log("Fizz Buzz Boom");
     $("#output").append("<div>"+"Fizz Buzz Boom")}
+
+  else if (sheep % 30 == 0)
+    {console.log("Buzz Boom"); 
+    $("#output").append("<div>"+"Buzz Boom")}
+
+  else if (sheep % 21 == 0)
+    {console.log("Fizz Boom"); 
+    $("#output").append("<div>"+"Fizz Boom")}
 
   else if (sheep % 15 == 0)
     {console.log("Fizz Buzz"); 
