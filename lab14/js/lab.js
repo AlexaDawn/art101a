@@ -7,15 +7,26 @@
 // Functions
 
 // this is an example function and this comment tells what it doees and what parameters are passed to it.
-function myFunction(param1, param2) {
+function square(x){
+  return (x ** 2);
+}
   // some code here
   // return results;
-}
+console.log("What is 21 squared?", square(21));
+console.log("What is 69 squared?", square(69));
 
-function main() {
-  console.log("Main function started.");
-  // the code that makes everything happen
-}
+numbers = [69, 7, 62, 2, 63, 42,]
+console.log("My numbers: ", numbers);
+$("#debug-output").append("<div>"+ "My numbers: " + numbers);
 
-// let's get this party started
-main();
+var result = numbers.map(square);
+console.log("My numbers squared: ", result);
+$("#debug-output").append("<div>"+ "My numbers squared: " + result);
+
+var result2 = numbers.map(function(x){
+  return x + x;
+})
+
+console.log("The double of each number", result2);
+$("#debug-output").append("<div>"+ "The double of each number: " + result2);
+
