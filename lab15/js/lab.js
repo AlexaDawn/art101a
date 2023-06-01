@@ -1,21 +1,28 @@
 // index.js - purpose and description here
-// Author: Your Name
-// Date:
+// Author: Alexa Marquez
+// Date: 31 May
 
 // Constants
 
 // Functions
 
 // this is an example function and this comment tells what it doees and what parameters are passed to it.
-function myFunction(param1, param2) {
-  // some code here
-  // return results;
+
+function getStuff() {
+	console.log("Clicked!");
+  $.ajax({
+    url: "https://yerkee.com/api/cookie",
+    type: "GET",
+    data: {},
+  })
+  .done(function(data) {
+ 		// console.log(data);
+    console.log(data);
+    var answer = data.answer;
+    var imgURL = data.image;
+    $("#output").html("<h2>" + answer);
+    $("#output").append("<img src=" + imgURL + ">");
+  })
 }
 
-function main() {
-  console.log("Main function started.");
-  // the code that makes everything happen
-}
-
-// let's get this party started
-main();
+$("button").click(getStuff);
