@@ -37,4 +37,4 @@ function getStuff() {
   })
 }
 
-$("button").click(getStuff);
+$("#activate").click(getStuff);
